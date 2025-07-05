@@ -1,0 +1,410 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Cedaiy Cafe Iki Ollan Ambon - Menu &amp; Order
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-yellow-600 flex items-center" href="#">
+     <img alt="Coffee cup icon logo with steam rising, warm brown and yellow tones" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/0aff2cb2-c142-4f4b-cc1f-2876b07458eb.jpg" width="40"/>
+     Cedaiy Cafe Iki Ollan Ambon
+    </a>
+    <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+     <li>
+      <a class="hover:text-yellow-600 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-600 transition" href="#menu">
+       Menu
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-600 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-600 transition" href="#order">
+       Order
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-600 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle menu" class="md:hidden text-yellow-600 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-white px-6 pb-4" id="mobile-menu">
+    <ul class="space-y-4 text-gray-700 font-semibold">
+     <li>
+      <a class="block hover:text-yellow-600 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-600 transition" href="#menu">
+       Menu
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-600 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-600 transition" href="#order">
+       Order
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-yellow-600 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section with more interesting ceiling design -->
+  <section class="relative bg-gradient-to-b from-yellow-400 via-yellow-300 to-yellow-50 flex flex-col md:flex-row items-center max-w-7xl mx-auto px-6 py-20 md:py-28 gap-10 overflow-hidden" id="home">
+   <!-- Decorative ceiling pattern -->
+   <div aria-hidden="true" class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-40 md:h-48 bg-yellow-500 rounded-b-3xl shadow-xl z-0">
+    <svg class="w-full h-full" fill="none" viewbox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+      <pattern height="40" id="pattern-ceiling" patternunits="userSpaceOnUse" width="40" x="0" y="0">
+       <circle cx="20" cy="20" fill="rgba(255,255,255,0.15)" r="6">
+       </circle>
+       <circle cx="0" cy="0" fill="rgba(255,255,255,0.1)" r="2">
+       </circle>
+       <circle cx="40" cy="40" fill="rgba(255,255,255,0.1)" r="2">
+       </circle>
+      </pattern>
+     </defs>
+     <rect fill="url(#pattern-ceiling)" height="160" width="1440" y="0">
+     </rect>
+    </svg>
+   </div>
+   <div class="md:w-1/2 relative z-10 space-y-6">
+    <h1 class="text-5xl font-extrabold text-yellow-900 leading-tight drop-shadow-lg">
+     Selamat Datang di
+     <br/>
+     Cedaiy Cafe Iki Ollan Ambon
+    </h1>
+    <p class="text-yellow-900 text-lg md:text-xl drop-shadow-sm">
+     Nikmati kopi khas Ambon dan makanan lezat yang dibuat dengan cinta. Tempat hangat dan asri untuk berkumpul bersama keluarga dan teman.
+    </p>
+    <a class="inline-block bg-yellow-900 text-yellow-50 px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-yellow-800 transition" href="#menu">
+     Lihat Menu
+    </a>
+   </div>
+   <div class="md:w-1/2 relative z-10">
+    <img alt="A beautifully crafted cup of Ambon coffee with latte art on a wooden table with tropical leaves and warm lighting" class="rounded-3xl shadow-2xl w-full object-cover" height="420" src="https://storage.googleapis.com/a1aa/image/b9399574-f437-4a1c-b5a0-c46a73759f26.jpg" width="600"/>
+   </div>
+  </section>
+  <!-- Menu Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="menu">
+   <h2 class="text-3xl font-bold text-yellow-700 mb-10 text-center">
+    Menu Favorit Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <!-- Product 1 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+     <img alt="A small cup of rich dark espresso coffee with crema on top served on a white saucer with a silver spoon" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/c53f5aa3-9e32-4097-f37d-ffc09cdebcf6.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Espresso Coffee
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Kopi hitam pekat dengan rasa kuat dan aroma yang menggoda.
+      </p>
+      <div class="flex justify-between items-center">
+       <span class="text-yellow-600 font-bold text-lg">
+        Rp15.000
+       </span>
+       <button class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+        Pesan
+       </button>
+      </div>
+     </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+     <img alt="A cup of cappuccino coffee with frothy milk foam and cinnamon powder on top served on a wooden table" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/0f67219c-c95e-45dc-cfaa-9d8229d29deb.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Cappuccino
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Kopi dengan susu berbusa lembut dan taburan kayu manis yang harum.
+      </p>
+      <div class="flex justify-between items-center">
+       <span class="text-yellow-600 font-bold text-lg">
+        Rp20.000
+       </span>
+       <button class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+        Pesan
+       </button>
+      </div>
+     </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+     <img alt="A slice of toasted bread topped with mashed avocado, cherry tomatoes, and microgreens on a white plate" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/225f25bb-5fa5-400e-177a-a33ad352dea7.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Avocado Toast
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Roti panggang dengan alpukat segar dan topping sayuran sehat.
+      </p>
+      <div class="flex justify-between items-center">
+       <span class="text-yellow-600 font-bold text-lg">
+        Rp25.000
+       </span>
+       <button class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+        Pesan
+       </button>
+      </div>
+     </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+     <img alt="A slice of rich chocolate cake with chocolate frosting and a drizzle of chocolate sauce on a white plate" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/f6c4368a-8f35-4681-2464-e878b1bc9084.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Chocolate Cake
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Kue coklat lembut dengan lapisan krim dan rasa manis yang pas.
+      </p>
+      <div class="flex justify-between items-center">
+       <span class="text-yellow-600 font-bold text-lg">
+        Rp30.000
+       </span>
+       <button class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+        Pesan
+       </button>
+      </div>
+     </div>
+    </div>
+    <!-- Product 5 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+     <img alt="A tall glass of iced latte coffee with milk and ice cubes, served with a straw on a wooden table" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/961bd615-d931-4da5-2707-806d67427b56.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Iced Latte
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Kopi susu dingin yang menyegarkan dengan es batu yang renyah.
+      </p>
+      <div class="flex justify-between items-center">
+       <span class="text-yellow-600 font-bold text-lg">
+        Rp22.000
+       </span>
+       <button class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+        Pesan
+       </button>
+      </div>
+     </div>
+    </div>
+    <!-- Product 6 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+     <img alt="A sandwich with grilled chicken, lettuce, tomato, and mayonnaise on toasted bread served on a wooden board" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/1d38d152-3cef-4646-73b4-695a021776be.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Chicken Sandwich
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Sandwich isi ayam panggang dengan sayuran segar dan saus spesial.
+      </p>
+      <div class="flex justify-between items-center">
+       <span class="text-yellow-600 font-bold text-lg">
+        Rp28.000
+       </span>
+       <button class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+        Pesan
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="bg-yellow-100 py-16 px-6 max-w-7xl mx-auto rounded-lg shadow-lg mb-16" id="about">
+   <div class="flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
+    <div class="md:w-1/2">
+     <img alt="Cozy cafe interior with wooden tables, warm lighting, and customers enjoying coffee and food" class="rounded-lg shadow-lg w-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/2e5abba7-d2a3-4e40-5b1e-3525dc97ce8b.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2 space-y-6">
+     <h2 class="text-3xl font-bold text-yellow-700">
+      Tentang Cedaiy Cafe Iki Ollan Ambon
+     </h2>
+     <p class="text-gray-700 text-lg leading-relaxed">
+      Cedaiy Cafe Iki Ollan Ambon berdiri sejak tahun 2010 dengan misi memberikan pengalaman kopi khas Ambon terbaik dan makanan berkualitas tinggi. Kami menggunakan bahan-bahan segar dan resep autentik untuk memanjakan lidah Anda.
+     </p>
+     <p class="text-gray-700 text-lg leading-relaxed">
+      Suasana nyaman dan pelayanan ramah membuat setiap kunjungan menjadi momen yang menyenangkan. Kami juga mendukung petani kopi lokal untuk menjaga kualitas dan keberlanjutan.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Order Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="order">
+   <h2 class="text-3xl font-bold text-yellow-700 mb-10 text-center">
+    Pesan Sekarang
+   </h2>
+   <form autocomplete="off" class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8 space-y-6" id="order-form">
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="name">
+      Nama Lengkap
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-yellow-500 focus:ring-1 focus:ring-yellow-500" id="name" name="name" placeholder="Masukkan nama Anda" required="" type="text"/>
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="phone">
+      Nomor Telepon
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-yellow-500 focus:ring-1 focus:ring-yellow-500" id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Masukkan nomor telepon" required="" type="tel"/>
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="product">
+      Pilih Produk
+     </label>
+     <select class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-yellow-500 focus:ring-1 focus:ring-yellow-500" id="product" name="product" required="">
+      <option disabled="" selected="" value="">
+       Pilih menu
+      </option>
+      <option value="Espresso Coffee">
+       Espresso Coffee - Rp15.000
+      </option>
+      <option value="Cappuccino">
+       Cappuccino - Rp20.000
+      </option>
+      <option value="Avocado Toast">
+       Avocado Toast - Rp25.000
+      </option>
+      <option value="Chocolate Cake">
+       Chocolate Cake - Rp30.000
+      </option>
+      <option value="Iced Latte">
+       Iced Latte - Rp22.000
+      </option>
+      <option value="Chicken Sandwich">
+       Chicken Sandwich - Rp28.000
+      </option>
+     </select>
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="quantity">
+      Jumlah
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-yellow-500 focus:ring-1 focus:ring-yellow-500" id="quantity" min="1" name="quantity" required="" type="number" value="1"/>
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="notes">
+      Catatan (opsional)
+     </label>
+     <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none" id="notes" name="notes" placeholder="Misal: tanpa gula, ekstra susu, dll." rows="3"></textarea>
+    </div>
+    <button class="w-full bg-yellow-600 text-white font-bold py-3 rounded-full hover:bg-yellow-700 transition" type="submit">
+     Kirim Pesanan
+    </button>
+    <p class="text-center mt-4 font-semibold" id="order-message">
+    </p>
+   </form>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-yellow-100 py-16 px-6 max-w-7xl mx-auto rounded-lg shadow-lg mb-16" id="contact">
+   <h2 class="text-3xl font-bold text-yellow-700 mb-10 text-center">
+    Hubungi Kami
+   </h2>
+   <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div class="space-y-6 text-gray-700">
+     <p>
+      <i class="fas fa-map-marker-alt text-yellow-600 mr-3">
+      </i>
+      Jl. Kopi Sejahtera No. 123, Ambon, Indonesia
+     </p>
+     <p>
+      <i class="fas fa-phone-alt text-yellow-600 mr-3">
+      </i>
+      +62 812 3456 7890
+     </p>
+     <p>
+      <i class="fas fa-envelope text-yellow-600 mr-3">
+      </i>
+      info@cedaiycafeambon.com
+     </p>
+     <p>
+      <i class="fas fa-clock text-yellow-600 mr-3">
+      </i>
+      Senin - Minggu: 08.00 - 22.00 WIT
+     </p>
+    </div>
+    <div>
+     <img alt="Cafe exterior with a signboard, outdoor seating area with tables and chairs, tropical plants and warm sunset lighting" class="rounded-lg shadow-lg w-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/17315f4d-8787-4a2d-521f-02cabc2a2d36.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-yellow-600 text-yellow-100 py-6 text-center font-semibold">
+   © 2024 Cedaiy Cafe Iki Ollan Ambon. All rights reserved.
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Order form submission simulation
+    const orderForm = document.getElementById('order-form');
+    const orderMessage = document.getElementById('order-message');
+
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = orderForm.name.value.trim();
+      const phone = orderForm.phone.value.trim();
+      const product = orderForm.product.value;
+      const quantity = orderForm.quantity.value;
+      const notes = orderForm.notes.value.trim();
+
+      if (!name || !phone || !product || quantity < 1) {
+        orderMessage.textContent = 'Mohon isi semua data dengan benar.';
+        orderMessage.classList.remove('text-green-600');
+        orderMessage.classList.add('text-red-600');
+        return;
+      }
+
+      orderMessage.textContent = `Terima kasih, ${name}! Pesanan Anda (${quantity} x ${product}) telah diterima. Kami akan menghubungi Anda di nomor ${phone}.`;
+      orderMessage.classList.remove('text-red-600');
+      orderMessage.classList.add('text-green-600');
+
+      orderForm.reset();
+    });
+  </script>
+ </body>
+</html>
